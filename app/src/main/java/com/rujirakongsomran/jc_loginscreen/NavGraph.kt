@@ -16,7 +16,13 @@ fun SetupNavGraph(
         composable(
             route = Screen.Login.route
         ){
-            LoginPage()
+            LoginPage(navController = navController)
         }
+        composable(
+            route = Screen.Home.route
+        ){
+            HomePage()
+        }
+
     }
 }
