@@ -14,6 +14,7 @@ class MainActivity : ComponentActivity() {
         setContent {
             JC_LoginScreenTheme {
                 navController = rememberNavController()
+                SetupNavGraph(navController = navController)
             }
         }
     }
